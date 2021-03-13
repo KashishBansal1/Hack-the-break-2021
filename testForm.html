@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <!--SCRIPTS-->
+    <!-- Firebase libraries from CDN -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-storage.js"></script>
+    <!-- Your own Firebase API key information -->
+    <script src="firebaseAPI.js"></script>
+
+    <!-- Control Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="sendData.js"></script>
+    <script src="handleForm.js"></script>
+    <!--SCRIPTS OUT-->
+
+    <form id="form">
+        <h3 style="color:#4e7; font-family:'Arial'">Form</h3>
+        <fieldset>
+            <legend>User Profile</legend>
+            <input type="number" id="ccn" placeholder="Care Card #" min="0" max="9999999999" />
+            <input type="text" id="fname" placeholder="first name" required />
+            <input type="text" id="lname" placeholder="last name" required />
+            <input type="number" id="phone" placeholder="phone" min="0" max="9999999999" />
+            <input type="date" id="dateOfBirth" placeholder="dob" />
+            <input type="text" id="adress" />
+            <input type="text" id="zip" placeholder="postal code" required />
+            <input type="text" id="city" placeholder="city" required />
+            <br />
+            <input type="reset" />
+            <input type="button" id="butt" onclick="handleForm()" />
+        </fieldset>
+    </form>
+</body>
+</html>
