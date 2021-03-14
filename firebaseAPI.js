@@ -13,6 +13,8 @@ var firebaseConfig = {
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+// firebase.analytics();
 // Create the Firestore database object
 // Henceforce, any reference to the database can be made with "db"
-const db = firebase.firestore();
+var db = firebase.firestore();
+var docRef = db.collection("RegisteredUsers");

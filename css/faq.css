@@ -15,27 +15,39 @@
 
   }
 
+  .main{
+      padding-bottom: 8em;
+  }
   .footer {
       display: grid;
       grid-template: "aboutus""faq""contactus""privacy"/ 25% 25% 25% 25%;
       text-align: center;
       font-size: 23px;
-      margin-top: 5em;
+      /* margin-top: 5em; */
       background-color: black;
       color: white;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
   }
 
-  .text{
+  h5{
+      color: blue;
+  }
+  .text {
       margin-top: 1em;
       margin-bottom: 1em;
   }
 
+  .card{
+      margin: 2em;
+  }
   .header {
       display: grid;
       grid-template: "vancouver""province""lang"/25% 50% 25%;
       grid-area: header;
       font-size: 25px;
-      
+
   }
 
   .vch {
@@ -69,18 +81,18 @@
       .footer {
           font-size: 19px;
       }
-      
-       .center {
-           width: 300px;
-           height: 480px;
-           top: 50%;
-           left: 50%;
-           margin-left: -150px;
-           margin-top: -250px;
-           font-size: 13px;
-       }
 
-       .text {
-           line-height: 16px;
-       }
-   }
+      .center {
+          width: 300px;
+          height: 480px;
+          top: 50%;
+          left: 50%;
+          margin-left: -150px;
+          margin-top: -250px;
+          font-size: 13px;
+      }
+
+      .text {
+          line-height: 16px;
+      }
+  }
