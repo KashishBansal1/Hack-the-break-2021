@@ -17,7 +17,7 @@
         }
         .background{
             grid-area: main;
-            background-image: url('vaccineblue.jpg');
+            background-image: url('./images/vaccineblue.jpg');
             background-size: cover;
             background-repeat: no-repeat; 
             filter: blur(0px)
@@ -31,7 +31,7 @@
         }
         .header{
             display: grid;
-            grid-template: "vancouver" "province" "lang"/10% 80% 10%;
+            grid-template: "vancouver" "province" "lang"/25% 50% 25%;
             grid-area: header;
             font-size: 25px;
         }
@@ -41,10 +41,10 @@
         }
         .language{
             text-align: right;
-            margin-right: 30px;
+            margin-right: 20%;
         }
         .bc{
-            width: 110px;
+            width: 100px;
             margin-left: auto;
             margin-right: auto;
             margin-top: 5px;
@@ -59,14 +59,16 @@
             text-align: right;
             margin-right: -10px;
         }
+             .footer{
+            font-size: 19px;
         }
     </style>
   </head>
   <body>
       <div class="container">
       <div class="header">
-          <img class="vch" src="vch.png">
-          <img class="bc" src="bc.png">
+          <img class="vch" src="./images/vch.png">
+          <img class="bc" src="./images/bc.png">
           <p class="language">English</p>
       </div>
       <div class="background">
