@@ -61,4 +61,18 @@
       .footer {
           font-size: 19px;
       }
-  }
+      
+       .center {
+           width: 300px;
+           height: 480px;
+           top: 50%;
+           left: 50%;
+           margin-left: -150px;
+           margin-top: -250px;
+           font-size: 13px;
+       }
+
+       .text {
+           line-height: 16px;
+       }
+   }
