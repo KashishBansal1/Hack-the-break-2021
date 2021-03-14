@@ -14,6 +14,8 @@ function handleForm() {
 
     writeDataIntoDoc(firstName, lastName, dob, phoneNum, town, adr, code, writeTarget)
 
+    writeIDtoLocal();
+
     console.log(firstName + " " + lastName);
 
 }
