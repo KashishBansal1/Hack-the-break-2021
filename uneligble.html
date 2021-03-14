@@ -1,93 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <title>HTB</title>
-    <meta charset="utf-8"/>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
-        .container{
-            font-family: 'Noto Sans JP', sans-serif;
-            display: grid;
-            grid-template: "header" 10%
-                           "main" 86%
-                           "footer" 1%
-                            /100%;   
-            height:94vh;
-        }
-        .background{
-            grid-area: main;
-            background-image: url('./images/vaccineblue.jpg');
-            background-size: cover;
-            background-repeat: no-repeat; 
-            
-        }
-        .footer{
-            display: grid;
-            grid-template:  "aboutus" "faq" "contactus" "privacy" / 25% 25% 25% 25% ;
-            text-align: center;
-            font-size: 23px;
-            
-        }
-        .header{
-            display: grid;
-            grid-template: "vancouver" "province" "lang"/25% 50% 25%;
-            grid-area: header;
-            font-size: 25px;
-        }
-        .vch{
-            float:left;
-            width:205px;
-        }
-        .language{
-            text-align: right;
-            margin-right: 20%;
-        }
-        .bc{
-            width: 100px;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 5px;
-        }
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="./css/Uneligible.css" />
+</head>
 
+<body>
+    <div class="container">
+        <div class="header">
+            <img class="vch" src="./images/vch.png">
+            <img class="bc" src="./images/bc.png">
+            <p class="language">English</p>
+        </div>
+        <div class="background">
 
-         @media screen and (max-width: 600px) {
-           .bc{
-            display: none;   
-           }
-              .language{
-            text-align: right;
-            margin-right: -10px;
-        }
-             .footer{
-            font-size: 19px;
-        }
-    </style>
-  </head>
-  <body>
-      <div class="container">
-      <div class="header">
-          <img class="vch" src="./images/vch.png">
-          <img class="bc" src="./images/bc.png">
-          <p class="language">English</p>
-      </div>
-      <div class="background">
-     
-      </div>
-      <div class="footer">
-          <div>
-              <p>About Us</p>
-          </div>
-          <div >
-              <p>FAQ</p>
-          </div>
-          <div >
-              <p >Contact Us</p>
-          </div>
-          <div >
-              <p>Privacy</p>
-          </div>
-      </div>
-      </div>
-  </body>
+        </div>
+        <div class="footer">
+            <div>
+                <p>About Us</p>
+            </div>
+            <div>
+                <p>FAQ</p>
+            </div>
+            <div>
+                <p>Contact Us</p>
+            </div>
+            <div>
+                <p>Privacy</p>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
