@@ -38,36 +38,67 @@
         <div class="col-sm">
               <form>
                 <div class="form-group">
-                  <label for="InputEmail1">Full Name</label>
-                  <input type="name" class="form-control" id="InputFullName" aria-describedby="nameHelp" placeholder="Enter Full Name">
-                  <small id="nameHelp" class="form-text text-muted">We'll never share your Full Name with anyone else.</small>
+                  <label for="fname">First Name</label>
+                  <input type="text" class="form-control" id="fname" aria-describedby="fnameHelp" placeholder="Enter First Name">
+                  <small id="fnameHelp" class="form-text text-muted">We'll never share your First Name with anyone else.</small>
+                  <label for="lname">Last Name</label>
+                  <input type="text" class="form-control" id="lname" aria-describedby="lnameHelp" placeholder="Enter Last Name">
+                  <small id="lnameHelp" class="form-text text-muted">We'll never share your Last Name with anyone else.</small>
                 </div>
                 <div class="form-group">
                   <label for="InputEmail1">Email address</label>
-                  <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <input type="text" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                   <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
                 <div class="form-group">
-                  <label for="inputDOB">Date of Birth</label>
-                  <input type="dob" class="form-control" id="InputDOB" placeholder="dob">
+                  <label for="dateOfBirth">Date of Birth</label>
+                  <input type="text" class="form-control" id="dateOfBirth" placeholder="dob">
                   <small id="dobHelp" class="form-text text-muted">Use mm/dd/yyy format</small>
                 </div>
                 <div class="form-group">
-                  <label for="inputPhone">Phone</label>
-                  <input type="phone" class="form-control" id="InputPhone" placeholder="phone">
+                  <label for="phone">Phone</label>
+                  <input type="text" class="form-control" id="phone" placeholder="Phone Number">
                   <small id="phoneHelp" class="form-text text-muted">Use 10-digit phone 123 456 7890</small>
+                </div>
+                <div class="form-group">
+                  <label for="ccn">ccc</label>
+                  <input type="text" class="form-control" id="ccn" placeholder="Care Card">
+                  <small id="ccnHelp" class="form-text text-muted">Use 10-digit CCN 123 456 7890</small>
                 </div>
                 <div class="form-check">
                   <input type="checkbox" class="form-check-input" id="submitCheck1">
                   <label class="form-check-label" for="submitCheck1">Send confirmation via email or text</label>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary" onclick="handleForm()">Submit</button>
               </form>
         </div>
         <div class="col-sm">
         </div>
-      </div>
-</div>
+        <div class="row">
+          <div class="col-sm">
+          </div>
+          <div class="col-sm">
+          </div>
+          <div class="col-sm">
+          </div>
+        </div>
+    </div>
+    <!--SCRIPTS-->
+    <!-- Firebase libraries from CDN -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-storage.js"></script>
+    <!-- Your own Firebase API key information -->
+    <script src="firebaseAPI.js"></script>
+
+    <!-- Control Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="sendData.js"></script>
+    <script src="handleForm.js"></script>
+    <!--SCRIPTS OUT-->
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
